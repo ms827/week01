@@ -1,4 +1,6 @@
 import sys
+import time
+st = time.time()  # 시작 시간 저장
 sys.stdin=open("이민석\input.txt", "rt")
 
 sq1, sq2 = map(int,input().split())
@@ -36,5 +38,7 @@ for a in x_list:
 
 print(max(max_lst))
 
+
+print("time :", time.time() - st)
 
 

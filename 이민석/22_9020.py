@@ -4,7 +4,6 @@ sys.stdin=open("이민석\input.txt", "rt")
 t = int(input())
 
 def gold(g):
-    sosu = False
     if g == 2:
         sosu = True
     for j in range(2,g):

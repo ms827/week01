@@ -18,11 +18,14 @@ def dfs_backtracking(start, now, value, visited): #시작도시번호,다음도�
         return
     for i in range(N): #도시의 개수 만큼 반복문을 돈다.
         #만약 현재 도시에서 갈 수 있는 도시의 비용이 0이 아니고 이미 방문한 도시가 아니며 그 비용값이 저장되어있는 최소값보다 작다면
+        print(i)
         if travel_cost[now][i] != 0 and i not in visited and value < min_value: 
             visited.append(i) #그 도시를 방문목록에 추가
+            print(visited)
             dfs_backtracking(start, i, value + travel_cost[now][i], visited) #그 도시를 방문한다.
             visited.pop() #방문을 완료했다면 방문목록 해제
-
+            print(visited,'pop')
+        
 
 #도시마다(0~3) 출발점을 지정
 for i in range(N):

@@ -1,7 +1,10 @@
+import sys
+sys.stdin=open("이민석\input.txt", "rt")
+
 x,y,w,h = map(int,input().split())
 
-a = min(w-x,x-0)
-b = min(h-y,y-0)
+a = min(w-x,x)
+b = min(h-y,y)
 
 if a>b:
     print(b)

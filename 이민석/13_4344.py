@@ -12,4 +12,4 @@ for _ in range(c):
             cnt += 1 
         per = (cnt/score[0])*100 
         
-    print('%.3f' %per + '%')
+    print('%.3f' % per + '%')

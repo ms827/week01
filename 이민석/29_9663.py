@@ -2,7 +2,7 @@ import sys
 import time
 st = time.time()  # 시작 시간 저장
 sys.stdin=open("이민석\input.txt", "rt")
-
+#9663
 n = int(input())
 info = [0] * n
 located = [False] * n

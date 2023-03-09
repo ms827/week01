@@ -6,9 +6,8 @@ def sosu (data):
             return False
     return True
         
-
 N=int(sys.stdin.readline())
-temp = [False, False] + [True]*10001
+
 for _ in range(N):
     data = int(sys.stdin.readline())
     mid = data //2

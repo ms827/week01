@@ -10,3 +10,4 @@ for j in range(10001):
     if arr[j] !=0:
         for i in range(arr[j]):
             print(j)
+            

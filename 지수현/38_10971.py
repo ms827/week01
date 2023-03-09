@@ -4,6 +4,7 @@ def recursive(start,current,total,visited):
     global min_value
 
     if len(visited) == N:
+        print(*visited)
         if cost[current][start] !=0:
             min_value = min(min_value, total + cost[current][start])
             return

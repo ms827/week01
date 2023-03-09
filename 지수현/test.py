@@ -1,19 +1,22 @@
 import sys
-sentence = list(sys.stdin.readline().rstrip())
 
-result=''
-for st in sentence:
-    if st.islower():
-        if (ord(st)+13)%ord('z') > 0:
-            result+=chr((ord(st)+13)%ord('z')+ord('a'))
-        else:   
-            result+=chr(ord(st)+13)
+sys.stdin = open("test.txt","rt")
 
-    elif st.isupper():
-        if (ord(st)+13)%ord('Z') > 0:
-            result+=chr((ord(st)+13)%ord('Z')+ord('A'))
-        else:   
-            result+=chr(ord(st)+13)
-    else:
-        result+=st
+N = int(input())
+arrs = list(map(int,input().split()))
+result = 0
+
+for arr in arrs:
+    cnt = 0
+    
+    if arr == 1:
+        continue
+
+    for i in range(2,arr+1):
+        if arr%i==0:
+            cnt+=1
+    
+    if cnt < 2:
+        result+=1
+
 print(result)

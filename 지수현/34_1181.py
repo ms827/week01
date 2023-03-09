@@ -13,5 +13,4 @@ for i in range(len(arrs)):
         arrs[i].sort()
         results.extend(arrs[i])
 
-for result in results:
-    print(result)
+print(*results)
